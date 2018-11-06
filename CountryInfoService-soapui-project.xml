@@ -1007,7 +1007,7 @@
       <soap12:address location="http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"/>
     </port>
   </service>
-</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint></con:endpoints><con:operation id="5c5e2e9b-f255-4111-b335-7649eda4fd48" isOneWay="false" action="" name="CapitalCity" bindingOperationName="CapitalCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a584e380-f7d0-4ae4-bc66-2523b51ca9f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://mdwtpbust1.telecom.com.ar:8701/obtenerDisponibilidadDelivery?wsdl</con:endpoint><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint></con:endpoints><con:operation id="5c5e2e9b-f255-4111-b335-7649eda4fd48" isOneWay="false" action="" name="CapitalCity" bindingOperationName="CapitalCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a584e380-f7d0-4ae4-bc66-2523b51ca9f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:CapitalCity>\r
@@ -1049,7 +1049,7 @@
          <web:sCountryName>?</web:sCountryName>\r
       </web:CountryISOCode>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/></con:call></con:operation><con:operation id="fcac8396-cb1a-489f-8aa7-974552139553" isOneWay="false" action="" name="CountryName" bindingOperationName="CountryName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a2f695b-c541-4c0c-a846-781796bc5e13" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="fcac8396-cb1a-489f-8aa7-974552139553" isOneWay="false" action="" name="CountryName" bindingOperationName="CountryName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a2f695b-c541-4c0c-a846-781796bc5e13" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:CountryName>\r
@@ -1545,4 +1545,110 @@ if(it.name == "TestCase3") {
 }
 */
 
-log.info ("	TestCase Name is : "+testRunner.testCase.name);</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Name</con:name><con:value>I am in Project</con:value></con:property><con:property><con:name>CountryName</con:name><con:value>IN</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+log.info ("	TestCase Name is : "+testRunner.testCase.name);</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="2fa1709b-ff4f-4344-9c22-afc56918e422" name="TestSuite 4"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6245ccdc-6f43-4a3f-b7cb-a691e2a56e6d" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Data driven1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="groovy" name="Groovy Script" id="0c47926b-3af9-4cbf-a7cb-e684c5eeeb82" disabled="true"><con:settings/><con:config><script>import org.apache.poi.xssf.usermodel.*
+
+def fs = new FileInputStream("C:/Users/mzarate/Desktop/test1.xls")
+def wb = XSSFWorkbook(fs)
+def ws = wb.getSheet("Sheet1")
+def r = ws.getPhysicalNumberOfRows()
+
+for(def i=0; i&lt;r ; i++)
+{
+	def row = ws.getRow(i)
+	def c = row.getPhysicalNumberOfCells()	
+
+	for (def j=0;j&lt;c;j++)
+	{
+	  def cell = row.getCell(j)
+	  log.info cell.getStringCellValue()	
+	}
+}</script></con:config></con:testStep><con:testStep type="request" name="CountryISOCode" id="9f3ed895-23ae-422f-a9fb-03e53bcf8d43" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountryISOCode</con:operation><con:request name="CountryISOCode" id="94f50350-3eb5-4147-acab-609867cd5dfb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://mdwtpbust1.telecom.com.ar:8701/obtenerDisponibilidadDelivery?wsdl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryISOCode>\r
+         <web:sCountryName>${Property- Looper#Value}</web:sCountryName>\r
+      </web:CountryISOCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="64f698e7-20ce-432b-9d93-a5cc6886c15c"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Copy of CountryISOCode" id="95871177-00f0-4398-90a5-47e7ed2310d5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountryISOCode</con:operation><con:request name="Copy of CountryISOCode" id="94f50350-3eb5-4147-acab-609867cd5dfb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://mdwtpbust1.telecom.com.ar:8701/obtenerDisponibilidadDelivery?wsdl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://www.personal.com.ar/Common/RequestMessageHeader/v1.0" xmlns:v11="http://www.personal.com.ar/ESB/ObtenerDisponibilidadDelivery/v1.0" xmlns:v12="http://www.personal.com.ar/Common/Entities/NegocioComun/LocalizacionGeografica/v1.0" xmlns:v13="http://www.personal.com.ar/Common/Entities/Producto/Producto/v1.0">
+   <soapenv:Header>
+      <v1:requestHeader>
+         <v1:consumer code="WEB" channel="WEB" additionalData="WEB">
+            <v1:userID>mdw_datapower</v1:userID>
+            <v1:credentials>
+               <v1:userPassword>DP14ago17t</v1:userPassword>
+            </v1:credentials>
+         </v1:consumer>
+         <v1:message messageId="" consumerMessageId="">
+         </v1:message>
+      </v1:requestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v11:ObtenerDisponibilidadDeliveryRequest>
+         <v12:codProvincia>B</v12:codProvincia>
+         <v12:codLocalidad>B1704</v12:codLocalidad>
+         <ListaNMU>
+            <ItemListaNMU>
+               <v13:codNMU>${Property-Looper#Value}</v13:codNMU>
+            </ItemListaNMU>
+         </ListaNMU>
+      </v11:ObtenerDisponibilidadDeliveryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="64f698e7-20ce-432b-9d93-a5cc6886c15c"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script – DataSource" id="418a8fd9-7eee-4848-9e7b-30c74988b712"><con:settings/><con:config><script>/*
+@Author : Pradeep Bishnoi
+@Description : Data Source to read .txt file and pass the value to corresponding property.
+@GroovyTestStepName : "Groovy Script - DataSource"
+*/
+ 
+import com.eviware.soapui.support.XmlHolder
+def myTestCase = context.testCase
+def counter,next,previous,size
+File tickerEnumFile = new File("C:\\Input.txt") //make sure input.txt file already exists and contains different set of values sepearted by new line (CR).
+List lines = tickerEnumFile.readLines()
+size = lines.size.toInteger()
+propTestStep = myTestCase.getTestStepByName("Property-Looper") // get the Property TestStep
+propTestStep.setPropertyValue("Total", size.toString())
+log.info propTestStep
+counter = propTestStep.getPropertyValue("Count").toString()
+log.info counter
+counter= counter.toInteger()
+next = (counter > size-2? 0: counter+1)
+tempValue = lines[counter]
+propTestStep.setPropertyValue("Value", tempValue)
+propTestStep.setPropertyValue("Count", next.toString())
+next++
+log.info "Reading line : ${(counter+1)} / $lines.size"
+propTestStep.setPropertyValue("Next", next.toString())
+log.info "Value '$tempValue' -- updated in $propTestStep.name"
+if (counter == size-1)
+{
+propTestStep.setPropertyValue("StopLoop", "T")
+log.info "Setting the stoploop property now..."
+}
+else if (counter==0)
+{
+def runner = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner(testRunner.testCase, null)
+propTestStep.setPropertyValue("StopLoop", "F")
+}
+else
+{
+propTestStep.setPropertyValue("StopLoop", "F")
+}</script></con:config></con:testStep><con:testStep type="properties" name="Property-Looper" id="f0c120e1-b057-4d99-8f3f-affa1a62c896"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Value</con:name><con:value>PTPM2MINI</con:value></con:property><con:property><con:name>Count</con:name><con:value>2</con:value></con:property><con:property><con:name>Next</con:name><con:value>3</con:value></con:property><con:property><con:name>StopLoop</con:name><con:value>F</con:value></con:property><con:property><con:name>Total</con:name><con:value>5</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script – Data Loop" id="3d80c1de-1499-4c42-8f6b-4385c70e5c3a"><con:settings/><con:config><script>/*&lt;/pre>
+@Author : Pradeep Bishnoi
+@Description : Data Source Looper responsible for looping a specific teststep.
+@GroovyTestStepName : "Groovy Script - Data Loop"
+*/
+def myTestCase = context.testCase
+ 
+def runner
+propTestStep = myTestCase.getTestStepByName("Property-Looper") // get the Property TestStep
+endLoop = propTestStep.getPropertyValue("StopLoop").toString()
+ 
+if (endLoop.toString() == "T" || endLoop.toString()=="True" || endLoop.toString()=="true")
+{
+ log.info ("Exit Groovy Data Source Looper")
+ assert true
+}
+else
+{
+ testRunner.gotoStepByName("Groovy Script - DataSource") //setStartStep
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Name</con:name><con:value>I am in Project</con:value></con:property><con:property><con:name>CountryName</con:name><con:value>IN</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
